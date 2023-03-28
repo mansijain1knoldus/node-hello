@@ -1,10 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                sh 'sudo apt install nodejs'
+                echo 'Hello World!'
             }
         }
+        stage('Test') {
+            steps {
+                echo "testing is successful"
+            }
+        }
+        
     }
 }
