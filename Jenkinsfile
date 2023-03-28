@@ -4,16 +4,6 @@ pipeline {
 //         cron('* * * * *')
 //     }
     stages {
-//         stage('clone'){
-//             steps{
-//             git branch:'main' , url:'https://github.com/mansijain1knoldus/node-hello.git'
-//             }
-//         }
-//         stage('First') {
-//             steps {
-// //                 sh 'npm start'
-//             }
-//         }
         stage('Build') {
             steps {
                 echo 'Hello World!'
@@ -31,3 +21,15 @@ pipeline {
         }
     }
 }
+
+   
+//         stage('clone'){
+//             steps{
+//             git branch:'main' , url:'https://github.com/mansijain1knoldus/node-hello.git'
+//             }
+//         }
+//         stage('First') {
+//             steps {
+// //                 sh 'npm start'
+//             }
+//         }
