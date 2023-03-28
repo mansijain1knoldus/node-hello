@@ -4,6 +4,11 @@ pipeline {
 //         cron('* * * * *')
 //     }
     stages {
+        stage('First') {
+            steps {
+                sh 'npm start'
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Hello World!'
