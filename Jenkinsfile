@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('clone'){
             steps{
-            git branch:'main' , url:'https://github.com/mansijain1knoldus/node-hello.git'
+            git branch:'dev' , url:'https://github.com/mansijain1knoldus/node-hello.git'
             }
         }
         stage('Build') {
