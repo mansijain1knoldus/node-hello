@@ -6,3 +6,7 @@ const server = http.createServer((req, res) => {
   const msg = 'Hello Mansi!!! This is DEV Node  \n'
   res.end(msg);
 });
+
+server.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}/`);
+});
